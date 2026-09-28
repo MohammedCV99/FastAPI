@@ -1,0 +1,29 @@
+
+
+CCC
+*****************************************************************************
+*****************************************************************************
+**                         Authorised Access Only                          **
+**             Unauthorized access to this device is prohibited            **
+**                  All activity on this system is logged.                 **
+**           Disconnect IMMEDIATELY if you are not an authorised user!     **
+**                     "Any Violation Will be Prosecuted"                  **
+*****************************************************************************
+*****************************************************************************
+
+Devops_MobileApp#
+Devops_MobileApp#terminal width 511
+Devops_MobileApp#terminal length 0
+Devops_MobileApp#
+Devops_MobileApp#
+Devops_MobileApp#
+Devops_MobileApp#show cdp neighbors
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+
+Total cdp entries displayed : 0
+Devops_MobileApp#
+Devops_MobileApp#exit

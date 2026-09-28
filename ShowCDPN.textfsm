@@ -1,0 +1,10 @@
+Value DEVICE_ID (\S+)
+Value LOCAL_INTERFACE (\S+\s+\S+)
+Value HOLDTIME (\d+)
+Value CAPABILITY (.+?)
+Value PLATFORM (\S+)
+Value PORT_ID (\S+\s+\S+)
+
+Start
+  ^Device ID\s+Local Intrfce\s+Holdtme\s+Capability\s+Platform\s+Port ID
+  ^${DEVICE_ID}\s+${LOCAL_INTERFACE}\s+${HOLDTIME}\s+${CAPABILITY}\s+${PLATFORM}\s+${PORT_ID} -> Record
