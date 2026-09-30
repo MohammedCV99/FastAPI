@@ -3,6 +3,9 @@ from pydantic import BaseModel
 from netmiko import ConnectHandler, NetmikoTimeoutException, NetmikoAuthenticationException
 from typing import Optional
 import FSMfun as FSM
+from workers import WorkerEntrypoint
+import asgi
+
 app = FastAPI(title="FastAPI + Netmiko API", description="Run network commands via REST API", version="1.0.0")
 
 # Request model for device connection
@@ -21,6 +24,13 @@ class Devicespush(BaseModel):
     secret: Optional[str]
     command: str
 
+@app.get("/")
+async def root():
+    return {"status": "ok"}
+
+class Default(WorkerEntrypoint):
+    async def fetch(self, request):
+        return await asgi.fetch(app, request.js_object, self.env)
 @app.post("/run-command")
 def run_command(payload: DeviceCommand):
     """
