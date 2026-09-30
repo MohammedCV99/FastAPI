@@ -9,3 +9,6 @@ dependencies = [
     "workers-py",
     "workers-runtime-sdk"
 ]
+
+[tool.setuptools]
+py-modules = ["Main", "FSMfun"]
