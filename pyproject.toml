@@ -11,4 +11,4 @@ dependencies = [
 ]
 
 [tool.setuptools]
-py-modules = ["src/Main", "src/FSMfun"]
+py-modules = ["src.Main", "src.FSMfun"]
