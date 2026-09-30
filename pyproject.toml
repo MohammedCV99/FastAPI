@@ -2,13 +2,13 @@
 name = "fastapi-netmiko-api"
 version = "1.0.0"
 description = "FastAPI Netmiko API on Cloudflare Workers"
-requires-python = ">=3.13"
-
+requires-python = ">=3.12"
 dependencies = [
-    "fastapi",
+    "fastapi"
+]
+
+[dependency-groups]
+dev = [
     "workers-py",
     "workers-runtime-sdk"
 ]
-
-[tool.setuptools]
-py-modules = ["src.Main", "src.FSMfun"]
