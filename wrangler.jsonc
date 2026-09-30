@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fastapi-netmiko-api",
+  "main": "src/main.py",
+  "compatibility_date": "2026-09-30",
+  "compatibility_flags": [
+    "python_workers"
+  ]
+}
