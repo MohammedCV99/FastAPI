@@ -17,13 +17,15 @@ Devops_MobileApp#terminal length 0
 Devops_MobileApp#
 Devops_MobileApp#
 Devops_MobileApp#
-Devops_MobileApp#show cdp neighbors
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
-                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+Devops_MobileApp#show lldp neighbors
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
 
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+Device ID           Local Intf     Hold-time  Capability      Port ID
+e204.09e3.a46c      Gi1/0/48       180                        10e8.406c.a4e3
 
-Total cdp entries displayed : 0
+Total entries displayed: 1
+
 Devops_MobileApp#
 Devops_MobileApp#exit
